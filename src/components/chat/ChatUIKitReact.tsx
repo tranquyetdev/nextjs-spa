@@ -18,6 +18,8 @@ function ChatUIKitReact() {
                 message: "Hello my friend",
                 sentTime: "just now",
                 sender: "Joe",
+                direction: "incoming",
+                position: "single",
               }}
             />
           </MessageList>
