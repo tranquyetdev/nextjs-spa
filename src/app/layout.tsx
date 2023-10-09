@@ -34,7 +34,7 @@ export default function RootLayout({
             </li>
           </ul>
         </nav>
-        <div className="p-5" id="root">
+        <div className="p-5 h-screen" id="root">
           {children}
         </div>
         <footer className="flex justify-center p-5">

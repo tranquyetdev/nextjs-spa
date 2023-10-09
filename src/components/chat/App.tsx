@@ -5,6 +5,7 @@ import ChatFriends from "./ChatFriends";
 import ChatHome from "./ChatHome";
 import ChatUIKitReact from "./ChatUIKitReact";
 import ReactChatEngine from "./ReactChatEngine";
+import ChatOpenAI from "./ChatOpenAI";
 
 export function App() {
   return (
@@ -18,6 +19,9 @@ export function App() {
               <ul className="p-2">
                 <li className="p-2">
                   <Link to="/chat">Chat</Link>
+                </li>
+                <li className="p-2">
+                  <Link to="/chat/try-openai">Try OpenAI</Link>
                 </li>
                 <li className="p-2">
                   <Link to="/chat/try-chat-ui-kit-react">
@@ -41,6 +45,7 @@ export function App() {
           <div className="w-3/4 h-96 p-5 bg-gray-100">
             <Routes>
               <Route path="/chat" element={<ChatHome />}></Route>
+              <Route path="/chat/try-openai" element={<ChatOpenAI />}></Route>
               <Route
                 path="/chat/try-chat-ui-kit-react"
                 element={<ChatUIKitReact />}
